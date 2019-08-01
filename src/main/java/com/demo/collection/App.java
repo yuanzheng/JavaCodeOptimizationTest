@@ -29,6 +29,12 @@ public class App {
         LinkedListTest.deleteFromTailTest(times);
 
         System.out.println("---------------------------");
+        System.out.println("循环 + 迭代器迭代循环");
+        ArrayListTest.getByForTest(times);
+        LinkedListTest.getByForTest(times);
+
+        ArrayListTest.getByIteratorTest(times);
+        LinkedListTest.getByIteratorTest(times);
 
     }
 }

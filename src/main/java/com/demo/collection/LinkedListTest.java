@@ -1,5 +1,6 @@
 package com.demo.collection;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListTest {
@@ -128,6 +129,47 @@ public class LinkedListTest {
 
         System.out.println("LinkedList从集合尾部位置删除元素花费的时间"+(timeEnd-timeStart));
     }
+
+
+    public static void getByForTest(int DataNum) {
+        LinkedList<String> list = new LinkedList<String>();
+        int i = 0;
+
+        while (i < DataNum) {
+            list.add(i + "aaavvv");
+            i++;
+        }
+        long timeStart = System.currentTimeMillis();
+
+        for (int j=0; j < DataNum ; j++) {
+            list.get(j);
+        }
+
+        long timeEnd = System.currentTimeMillis();
+
+        System.out.println("LinkedList for(;;)循环花费的时间" + (timeEnd - timeStart));
+    }
+
+    public static void getByIteratorTest(int DataNum) {
+        LinkedList<String> list = new LinkedList<String>();
+        int i = 0;
+
+        while (i < DataNum) {
+            list.add(i + "aaavvv");
+            i++;
+        }
+        long timeStart = System.currentTimeMillis();
+
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            it.next();
+        }
+
+        long timeEnd = System.currentTimeMillis();
+
+        System.out.println("LinkedList 迭代器迭代循环花费的时间" + (timeEnd - timeStart));
+    }
+
 
 
 }
