@@ -1,4 +1,4 @@
-package com.demo.designpatterns.multiThreads;
+package com.demo.designpatterns.multiThreads_Context;
 
 import java.util.stream.IntStream;
 

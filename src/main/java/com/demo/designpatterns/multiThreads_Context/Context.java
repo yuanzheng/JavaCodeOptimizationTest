@@ -1,4 +1,4 @@
-package com.demo.designpatterns.multiThreads;
+package com.demo.designpatterns.multiThreads_Context;
 
 /** 上下文类 */
 public class Context {

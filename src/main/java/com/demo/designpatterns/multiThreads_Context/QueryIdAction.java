@@ -1,4 +1,4 @@
-package com.demo.designpatterns.multiThreads;
+package com.demo.designpatterns.multiThreads_Context;
 
 /** 设置上下文ID */
 public class QueryIdAction {
